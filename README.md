@@ -35,18 +35,6 @@ Reading images from 'db' directory...
 imgs.shape = (39, 224, 224, 3)
 X_features.shape = (39, 100352)
 
-[1/39] Plotting similar image recommendations for: steak2_resized
-[2/39] Plotting similar image recommendations for: asparagus5_resized
-[3/39] Plotting similar image recommendations for: steak4_resized
-...
-...
-...
-[38/39] Plotting similar image recommendations for: salad4_resized
-[39/39] Plotting similar image recommendations for: burger_test
-Plotting tSNE to output/tsne.png...
-Computing t-SNE embedding
-```
-
 ### Required libraries:
 
 * keras, numpy, matplotlib, sklearn, h5py, pillow
