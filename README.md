@@ -2,25 +2,6 @@
 
 Given a set of database images, we take the trained image classification VGG network, remove its last layers, and use the dissected model to convert our raw images into feature vectors for similarity comparison to produce similar image recommendations. No training is needed as we are re-using the low-level weight layers in the VGG network. A schematic for our implementation is shown here:
 
-<p align="center"> 
-<img src="https://github.com/ankonzoid/artificio/blob/master/similar_images_TL/coverart/coverart.jpg" width="80%">
-</p>
-
-As an example of its utility, we show that we can find similar food items in a small steakhouse food database by querying a burger and a salad below:
-
-<p align="center"> 
-<img src="https://github.com/ankonzoid/artificio/blob/master/similar_images_TL/output/rec/burger_test_rec.png" width="50%">
-</p>
-
-<p align="center"> 
-<img src="https://github.com/ankonzoid/artificio/blob/master/similar_images_TL/output/rec/salad_test_rec.png" width="50%">
-</p>
-
-In addition to making similar image recommendations, we can also visualize the image feature vectors by mapping the high-dimensional vectors onto a 2-dimensional manifold via the t-SNE algorithm to get a sense of how "far away" images are from each other in the feature space: 
-
-<p align="center"> 
-<img src="https://github.com/ankonzoid/artificio/blob/master/similar_images_TL/output/tsne.png" width="45%">
-</p>
 
 The steps towards building our similar images finder:
 
